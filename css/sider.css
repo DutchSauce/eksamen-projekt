@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  background-color: #2e2e2e;
+  height: 100%;
+  background-image: url(billeder/migselv-black.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right;
+}
+
+header{
+  background-color: transparent;
+}
+
+nav{
+  width: 100%;
+  float: right;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  display: table; /* Let the element behave like a <table> element */
+  float: left;
+}
+
+svg{
+  float: right;
+  color: white;
+  margin-right: 2vw;
+}
+
+svg:hover{
+  color: #ff4500;
+}
+
+h2{
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+main{
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  margin-top: 5vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  min-height: 100%;
+}
+
+/* Gør at p elementet skal være light */
+p {
+font-weight: lighter !important;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+.projekt1-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px;
+
+}
+
+.html-css-sider{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.portrait{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.flex-typo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+/* Styrer sprite (Animationen) position */
+.css-sprite{
+  position: relative;
+  left: 21%;
+  margin: 50px;
+}
+
+
+.sprite {
+	width: 400px;
+	height: 400px;
+	background: url('/eksamen-projekt/billeder/test-01.png') 0 0 no-repeat;
+	animation: play 1.5s steps(15) infinite;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+@keyframes play {
+	0%{background-position:0px;}
+   100% { background-position: -6000px; }
+}
+
+.dating-app{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.klik{
+  color: #fff;
+}
+
+#footer{
+  width: 100%;
+  height: 25vh;
+  background-color: #131313;
+  color: white;
+  text-align: center;
+  clear: both;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2vh;
+  color: #fff;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer-flex a{
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+.info{
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.menuer{
+color: #fff;
+text-align: left;
+}
+
+.footer-projekter{
+ text-align: left;
+}
+
+.mail{
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright{
+  background-color: #131313;
+}

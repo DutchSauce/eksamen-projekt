@@ -1,0 +1,432 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html, body{
+  background-color: #2E2E2E;
+  scroll-behavior: smooth; /* Virker ikke for Safari */
+  height: 100%;
+}
+
+
+header{
+  background-color: transparent;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav{
+  width: 100%;
+  float: right;
+  text-decoration: none;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  display: table; /* Gør at den opføre sig et <table> element */
+  float: left;
+}
+
+.logo:hover{
+  filter: opacity(50%);
+}
+
+.nav-bar{
+  width: fit-content;
+  padding: 15px;
+  margin: auto;
+  list-style: none;
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-bar:hover::after{
+  transform: scaleX(1);
+ transform-origin: bottom left;
+}
+
+.nav-bar li{
+  float: left;
+  margin-right: 30px;
+  display: inline-block;
+  position: relative;
+  color: #ff4500;
+}
+
+/* Giver navigation baren understreg samt easer ud */
+.nav-bar li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff4500;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-bar li:hover::after{
+  transform: scaleX(1);
+ transform-origin: bottom left;
+}
+
+.nav-bar li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar li a:hover{
+  text-decoration: none;
+  color: #ff4500;
+}
+
+.front-photo{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+h1{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+}
+
+/* Ændre i Multimedie Designer */
+.mmd{
+  position: absolute;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  font-weight: 200;
+  color: white;
+  left: 50%;
+  font-size: 32px;
+
+}
+
+/* Billedet bag h1 */
+.migselv-black{
+  bottom: 0;
+  left: 0;
+  width: 30%;
+}
+
+/* Ændre i alle section elementer */
+section{
+  width: 100%;
+  height: 100%;
+  float: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+h2{
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+/* Ændre i Hjem (forsiden) */
+#hjem{
+background-color: #2E2E2E;
+position: relative;
+}
+
+.ned{
+  position: absolute;
+  left: 49%;
+  bottom: 0px;
+  margin-bottom: 10vh;
+}
+
+/* Ændre i om mig */
+#om-mig{
+  height: 689px;
+  background-color: #131313;
+  position: relative;
+}
+
+.migselv{
+  width: 359px;
+  height: 608px;
+  margin-left: 5vw;
+  float: left;
+}
+
+.om{
+  color: white;
+  margin-top: 10vh;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  font-weight: 200;
+}
+
+p{
+  font-weight: 200;
+}
+
+#kompetencer{
+  height: 689px;
+  background-color: #2e2e2e;
+  position: relative;
+}
+
+.flex-komp{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 4vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.flex-komp div{
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+svg{
+  color: white;
+}
+
+/* Ændre i projekter */
+#projekt{
+background-color: #131313;
+position: relative;
+}
+
+/* Styr boksene under projekter */
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+}
+
+.container > a {
+  background-color: rgba(255, 69, 0, 0.8);
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 200px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  white-space: normal;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  padding: 5px;
+  background-color: #ff8c00;
+  border-radius: 5px;
+}
+
+.text:hover{
+  padding: 5px;
+  background-color: #ff4500;
+  border-radius: 5px;
+}
+
+.projekt1{
+  background-image: url(/eksamen-projekt/billeder/projekt1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.html-css{
+  background-image: url(/eksamen-projekt/billeder/htmlopgave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.typografi{
+  background-image: url(/eksamen-projekt/billeder/typografi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.css-ani{
+  background-image: url(/eksamen-projekt/billeder/ahd-css-link.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portrait{
+  background-image: url(/eksamen-projekt/billeder/portrait.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app-date{
+  background-image: url(/eksamen-projekt/billeder/app-date.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Andre i kontakt */
+#kontakt{
+  background-color: #2E2E2E;
+  padding-bottom: 19px;
+  position: relative;
+}
+
+/* Billedet under konatakt */
+.migselv2{
+  width: 25%;
+  margin-left: 72vw;;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Styler type="text", vælgte elements og textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Styler send knappen */
+input[type=submit] {
+  background-color: #ff8c00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Ændre farven når man flytter musen over send skifter baggrunden farve */
+input[type=submit]:hover {
+  background-color: #ff4500;
+}
+
+/* Ændre baggrunden til kontakt formuleren */
+.container3 {
+  position: absolute;
+  margin-left: 5vh;
+  margin-top: 10vh;
+  width: 25%;
+  border-radius: 5px;
+  background-color: #131313;
+  color: #fff;
+  padding: 20px;
+}
+
+.kon-text{
+  color: #fff;
+  text-align: center;
+  margin-top: 15vh;
+  border-radius: 15px;
+  border-color: #131313;
+}
+
+/* Styrere footerens bredde og baggrund */
+#footer{
+  width: 100%;
+  height: 25vh;
+  background-color: #131313;
+  color: white;
+  text-align: center;
+  clear: both;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2vh;
+  color: #fff;
+}
+
+
+.footer-flex a{
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+.info{
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.menuer{
+color: #fff;
+text-align: left;
+list-style: none;
+}
+
+.footer-projekter{
+ text-align: left;
+ list-style: none;
+}
+
+.mail{
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright{
+  background-color: #131313;
+}
+
+/* Gør hjem responsiv når man går ned til 600px */
+@media only screen and (max-width: 600px) {
+  .nav-bar{
+  font-size: 9px;
+  }
+
+  .mmd{
+    top: 70%
+  }
+
+  .migselv-black{
+    left: 0;
+    width: 100%;
+    position: relative;
+    top: 100px;
+  }
+
+  .ned{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
